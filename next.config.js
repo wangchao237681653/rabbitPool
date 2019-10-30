@@ -1,4 +1,8 @@
+
+const debug = process.env.NODE_ENV !== 'production';
+
 module.exports = {
+  assetPrefix: !debug ? '/rabbitPool.github.io/' : '',
   exportPathMap: async function (defaultPathMap) {
     return {
       '/': { page: '/' },
