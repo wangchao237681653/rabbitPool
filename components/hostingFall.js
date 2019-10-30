@@ -1,7 +1,6 @@
 import React from 'react'
 import TitleComp from './titleComp';
 import WorkFallItem from './WorkFallItem';
-import Guide from './guide';
 
 const colorStyle = {
   color: "rgba(96,90,254,1)"

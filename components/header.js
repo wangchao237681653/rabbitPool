@@ -1,41 +1,47 @@
 import React from 'react'
 import Link from 'next/link'
-
-
+import ComponentLayout from "./componentLayout";
+const style ={
+  background:"rgba(18,77,255,1)"
+};
 const Header = () => (
-  <header>
-    <ul>
-      <li className={"logo"}>
-         <img src="./logo.svg" alt="logo" />
-      </li>
-      <li>
-        <Link href='./index'>
-          <a className={"index"}>首页</a>
-        </Link>
-      </li>
-      <li>
-        <Link href='./hosting'>
-          <a className={"mine-h dark"}>矿机托管</a>
-        </Link>
-      </li>
-      <li>
-        <Link href='./unfind'>
-          <a className={"cloud-a dark"}>云算力</a>
-        </Link>
-      </li>
-      <li>
-        <Link href='./unfind'>
-          <a className={"mine-r dark"}>矿机租赁</a>
-        </Link>
-      </li>
-    </ul>
 
-    <style jsx>{`
+    <ComponentLayout
+      leftStyle={style}
+      rightStyle={style}
+      >
+      <header>
+        <ul>
+          <li className={"logo"}>
+            <img src="./logo.svg" alt="logo" />
+          </li>
+          <li>
+            <Link href='./index'>
+              <a className={"index"}>首页</a>
+            </Link>
+          </li>
+          <li>
+            <Link href='./hosting'>
+              <a className={"mine-h dark"}>矿机托管</a>
+            </Link>
+          </li>
+          <li>
+            <Link href='./unfind'>
+              <a className={"cloud-a dark"}>云算力</a>
+            </Link>
+          </li>
+          <li>
+            <Link href='./unfind'>
+              <a className={"mine-r dark"}>矿机租赁</a>
+            </Link>
+          </li>
+        </ul>
+      </header>
+      <style jsx>{`
       header {
         width:100%;
         height:60px;
         background:rgba(18,77,255,1);
-
       }
       ul {
         list-style-type: none;
@@ -76,7 +82,8 @@ const Header = () => (
        }
       
     `}</style>
-  </header>
+    </ComponentLayout>
+
 )
 
 export default Header;

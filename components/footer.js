@@ -1,43 +1,51 @@
 import React from 'react'
-
-
+import ComponentLayout from "./componentLayout";
+const leftStyle = {
+  background:"rgba(246,249,252,1)"
+}
+const rightStyle = {
+  background:"rgba(246,249,252,1)"
+}
 const Footer = () => (
-  <footer>
-
-    <div className={"f-left"}>
+  <ComponentLayout
+    leftStyle={leftStyle}
+    rightStyle={rightStyle}
+  >
+    <footer>
+      <div className={"f-left"}>
         <div className={"f-l-top"}>
-            <ul>
-              <li className={"f-logo"}>
-                <img src={"./f-logo.svg"} alt=""/>
-              </li>
-              <li className={"f-item f-phone"}>
-                <img src={"./icon/phone.svg"} alt=""/>
-                <span className={"f-font"}>联系电话 186 8888 8888</span>
-              </li>
+          <ul>
+            <li className={"f-logo"}>
+              <img src={"./f-logo.svg"} alt=""/>
+            </li>
+            <li className={"f-item f-phone"}>
+              <img src={"./icon/phone.svg"} alt=""/>
+              <span className={"f-font"}>联系电话 186 8888 8888</span>
+            </li>
 
-              <li  className={"f-item"}>
-                <img src={"./icon/email.svg"} alt=""/>
-                <span className={"f-font"}>联系邮箱 BTC@word.com</span>
-              </li>
+            <li  className={"f-item"}>
+              <img src={"./icon/email.svg"} alt=""/>
+              <span className={"f-font"}>联系邮箱 BTC@word.com</span>
+            </li>
 
-              <li  className={"f-item f-telegram"}>
-                <img src={"./icon/telegram.svg"} alt=""/>
-                <span className={"f-font"}>Telegram </span>
-                <button>加入群组</button>
-              </li>
-            </ul>
+            <li  className={"f-item f-telegram"}>
+              <img src={"./icon/telegram.svg"} alt=""/>
+              <span className={"f-font"}>Telegram </span>
+              <button>加入群组</button>
+            </li>
+          </ul>
         </div>
         <div className={"f-l-bottom"}>
-            <div className={"f-line"}></div>
-            <span className={"f-b"}>Copyright © 2019 RabbitPool - 鄂ICP备16005435号-1 鄂公网安备 鄂公网安备 42018502001134号</span>
-            <div></div>
+          <div className={"f-line"}></div>
+          <span className={"f-b"}>Copyright © 2019 RabbitPool - 鄂ICP备16005435号-1 鄂公网安备 鄂公网安备 42018502001134号</span>
+          <div></div>
         </div>
-    </div>
-    <div className={"f-right"}>
+      </div>
+      <div className={"f-right"}>
 
-    </div>
+      </div>
 
-    <style jsx>{`
+      <style jsx>{`
       footer {
         width:100%;
         height:217px;
@@ -103,7 +111,9 @@ const Footer = () => (
      }
 
     `}</style>
-  </footer>
+    </footer>
+  </ComponentLayout>
+
 )
 
 export default Footer;

@@ -1,21 +1,40 @@
 import React from 'react'
 import Link from 'next/link'
+import TitleComp from "./titleComp";
+import ComponentLayout from "./componentLayout";
 
+const colorStyle ={
+  color:"rgba(96,90,254,1)"
+}
+const titleStyle = {
+  paddingTop:"100px",
+  background:"rgba(246,249,252,1)",
+  boxShadow:"0px 1px 0px 0px rgba(0,0,0,0.04)"
+}
+const componentStyle = {
+  background:"rgba(246,249,252,1)"
+}
 const Product = () => (
-  <product>
-    <div className={"p-title"}>
-      <img className={"p-left"} src={"/1-right.png"} alt=""/>
-      <span>挖矿产品</span>
-      <img className={"p-right"} src={"/1-left.png"} alt=""/>
-    </div>
-      <div className={"summary"}>矿机租赁和云算力都是租赁矿机形式，同时提供托管矿机等多种形式，让您更轻松挖取比特币（BTC）</div>
+  <ComponentLayout
+    leftStyle={componentStyle}
+    rightStyle={componentStyle}
+    >
+    <product>
+      <TitleComp
+        leftCoin={"./1-right.png"}
+        rightCoin={"./1-left.png"}
+        title={"挖矿产品"}
+        summary={"矿机租赁和云算力都是租赁矿机形式，同时提供托管矿机等多种形式，让您更轻松挖取比特币（BTC）"}
+        titleCol={colorStyle}
+        style={titleStyle}
+      />
       <div className={"list"}>
         <div className={"pl-left item"}>
           <img src={"./img1.svg"} alt="mine-rent"/>
           <span className={"title"}>矿机租赁</span>
           <div className={"introduce"}>蚂蚁矿机，神马矿机等租赁</div>
           <div className={"actBtn mbtn"}>
-            <Link href='./unfind'>
+            <Link href='/unfind'>
               <div className={"btnContent"}>矿机租赁产品</div>
             </Link>
           </div>
@@ -25,7 +44,7 @@ const Product = () => (
           <span className={"title"}>云算力</span>
           <div className={"introduce"}>挖比特币等云算力租赁</div>
           <div className={"actBtn cBtn"}>
-            <Link href='./unfind'>
+            <Link href='/unfind'>
               <div className={"btnContent"}>云算力产品</div>
             </Link>
           </div>
@@ -35,14 +54,14 @@ const Product = () => (
           <span className={"title"}>矿机托管</span>
           <div className={"introduce"}>比特币矿机海内外托管</div>
           <div className={"actBtn rBtn"}>
-            <Link href='./hosting'>
+            <Link href='/hosting'>
               <div className={"btnContent"}>矿机托管介绍</div>
             </Link>
           </div>
         </div>
       </div>
-
-    <style jsx>{`
+    </product>
+      <style jsx>{`
       product {
           width:100%;
           height:657px;
@@ -59,32 +78,12 @@ const Product = () => (
           padding-left:381px;
           padding-top:10px;
       }
-      .p-title {
-          padding-top:100px;
-          padding-left:611px;
-      }
-      .p-title span {
-          width:150px;
-          height:50px;
-          font-size:36px;
-          font-family:PingFangSC-Medium,PingFang SC;
-          font-weight:500;
-          color:rgba(96,90,254,1);
-          line-height:50px;
-          letter-spacing:1px;
-      }
-      .p-title .p-left {
-          width:20px;
-          height:20px;
-          padding-right:3px;
-      }
-       .p-title .p-right {
-          width:16px;
-          height:16px;
-          padding-left:5px;
-      }
       product .list {
-          padding:40px 160px;   
+          padding:40px 160px;
+          min-width:1200px;
+          clear:both;
+          background:rgba(246,249,252,1);
+          box-shadow:0px 1px 0px 0px rgba(0,0,0,0.04);
       }
       product .list .item {
           width:348px;
@@ -107,7 +106,7 @@ const Product = () => (
           font-weight:500;
           color:rgba(51,51,51,1);
           line-height:25px;
-          padding:20px 0px 0px 138px;
+          padding-top:20px;
       }
       product .list .introduce {
           width:168px;
@@ -117,7 +116,8 @@ const Product = () => (
           font-weight:400;
           color:rgba(153,153,153,1);
           line-height:20px;
-          padding:10px 0px 0px 90px;
+          padding-top:10px;
+          margin: 0 auto;
       }
        product .list .pl-left {
           float:left;
@@ -146,14 +146,15 @@ const Product = () => (
           font-weight:500;
           color:rgba(255,255,255,1);
           line-height:22px;
-          padding: 9px 0px 0px 22px;
+          padding: 9px 0px 0px 0px;
       }
       
       .pl-left, .pl-middle, .pl-right {
           display:inline-block;
       }
     `}</style>
-  </product>
+  </ComponentLayout>
+
 )
 
 export default Product;
