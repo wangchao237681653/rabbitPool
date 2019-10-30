@@ -1,0 +1,82 @@
+webpackHotUpdate("static/development/pages/hosting.js",{
+
+/***/ "./components/titleComp.js":
+/*!*********************************!*\
+  !*** ./components/titleComp.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _this = undefined,
+    _jsxFileName = "/Users/leon/work/rabbitpool/components/titleComp.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+var TitleComp = function TitleComp(props) {
+  var titleCol = {};
+  titleCol.color = props.titleCol;
+  var _this$props = _this.props,
+      refid = _this$props.refid,
+      islocal = _this$props.islocal,
+      style = _this$props.style;
+  return __jsx("div", {
+    className: "t-reg",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }, __jsx("img", {
+    className: "t-leftCoin",
+    src: props.leftCoin,
+    alt: "",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }), __jsx("div", {
+    className: "t-title",
+    style: {
+      titleCol: titleCol
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, props.title), __jsx("img", {
+    className: "t-leftCoin",
+    src: props.rightCoin,
+    alt: "",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }), __jsx("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }, props.summary), __jsx("style", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }, "\n        body {\n          margin: 0;\n        }\n        .t-title {\n          height:50px;\n          font-size:36px;\n          font-family:PingFangSC-Medium,PingFang SC;\n          font-weight:500;\n          line-height:50px;\n          letter-spacing:1px;\n        }\n      "));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (TitleComp);
+
+/***/ })
+
+})
+//# sourceMappingURL=hosting.js.1a44878142b6565b2a98.hot-update.js.map
