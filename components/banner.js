@@ -1,23 +1,31 @@
 import React from 'react'
-
+import ComponentLayout from "./componentLayout";
+const style ={
+  background:"rgba(18,77,255,1)"
+};
 const Banner = () => (
-  <banner>
-    <div className={"ban"}>
+  <ComponentLayout
+    leftStyle={style}
+    rightStyle={style}
+  >
+    <banner>
+      <div className={"ban"}>
         <div className={"ban-reg"}>
-            <div className={"ban-title"}>BTC 一站式挖矿服务</div>
-            <div className={"ban-sum"}>全年稳定电力，专业运维，安全可靠的提取服务</div>
+          <div className={"ban-title"}>BTC 一站式挖矿服务</div>
+          <div className={"ban-sum"}>全年稳定电力，专业运维，安全可靠的提取服务</div>
         </div>
-    </div>
+      </div>
+    </banner>
     <style jsx>{`
       .ban {
           height:480px;
           background:url('./banner.jpg') no-repeat;
           overflow: hidden;
-          background-size:100%; 480px;
+          background-size: 1440px 480px;
       }
       
       .ban-reg {
-          padding:170px 0px 176px 120px;
+          padding:130px 0px 0px 120px;
       }
       .ban-title {
           width:472px;
@@ -30,6 +38,7 @@ const Banner = () => (
           letter-spacing:2px;
       }
       .ban-sum {
+          width:520px;
           height:34px;
           font-size:24px;
           font-family:PingFangSC-Regular,PingFang SC;
@@ -37,9 +46,11 @@ const Banner = () => (
           color:rgba(255,255,255,1);
           line-height:34px;
           padding-top:60px;
+          text-align:left;
       }
     `}</style>
-  </banner>
+  </ComponentLayout>
+
 )
 
 export default Banner;

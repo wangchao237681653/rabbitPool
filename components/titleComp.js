@@ -22,7 +22,6 @@ const TitleComp = props => {
            width:27px;
         }
         .t-reg {
-           width:293px;
            height:82px;
            display: block;
            margin:0 auto;
