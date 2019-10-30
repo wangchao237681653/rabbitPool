@@ -8,20 +8,20 @@ const Footer = () => (
         <div className={"f-l-top"}>
             <ul>
               <li className={"f-logo"}>
-                <img src={"/f-logo.svg"} alt=""/>
+                <img src={"./f-logo.svg"} alt=""/>
               </li>
               <li className={"f-item f-phone"}>
-                <img src={"/icon/phone.svg"} alt=""/>
+                <img src={"./icon/phone.svg"} alt=""/>
                 <span className={"f-font"}>联系电话 186 8888 8888</span>
               </li>
 
               <li  className={"f-item"}>
-                <img src={"/icon/email.svg"} alt=""/>
+                <img src={"./icon/email.svg"} alt=""/>
                 <span className={"f-font"}>联系邮箱 BTC@word.com</span>
               </li>
 
               <li  className={"f-item f-telegram"}>
-                <img src={"/icon/telegram.svg"} alt=""/>
+                <img src={"./icon/telegram.svg"} alt=""/>
                 <span className={"f-font"}>Telegram </span>
                 <button>加入群组</button>
               </li>

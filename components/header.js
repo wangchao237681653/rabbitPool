@@ -9,22 +9,22 @@ const Header = () => (
          <img src="./logo.svg" alt="logo" />
       </li>
       <li>
-        <Link href='/index'>
+        <Link href='./index'>
           <a className={"index"}>首页</a>
         </Link>
       </li>
       <li>
-        <Link href='/hosting'>
+        <Link href='./hosting'>
           <a className={"mine-h dark"}>矿机托管</a>
         </Link>
       </li>
       <li>
-        <Link href='/unfind'>
+        <Link href='./unfind'>
           <a className={"cloud-a dark"}>云算力</a>
         </Link>
       </li>
       <li>
-        <Link href='/unfind'>
+        <Link href='./unfind'>
           <a className={"mine-r dark"}>矿机租赁</a>
         </Link>
       </li>

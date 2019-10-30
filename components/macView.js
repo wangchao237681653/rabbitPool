@@ -9,20 +9,20 @@ const titleStyle = {
 const MacView = props => (
   <div>
     <TitleComp
-      leftCoin={"/3-right.png"}
-      rightCoin={"3-left.png"}
+      leftCoin={"./3-right.png"}
+      rightCoin={"./3-left.png"}
       title={"矿场实景图"}
       summary={"大型矿场,专业的矿机托管中心"}
       titleCol={colorStyle}
       style={titleStyle}
     />
     <div className={"view-list"}>
-      <img src={"/img/view01.png"} alt=""/>
-      <img src={"/img/view02.png"} alt=""/>
-      <img src={"/img/view03.png"} alt=""/>
-      <img src={"/img/view04.png"} alt=""/>
-      <img src={"/img/view05.png"} alt=""/>
-      <img src={"/img/view06.png"} alt=""/>
+      <img src={"./img/view01.png"} alt=""/>
+      <img src={"./img/view02.png"} alt=""/>
+      <img src={"./img/view03.png"} alt=""/>
+      <img src={"./img/view04.png"} alt=""/>
+      <img src={"./img/view05.png"} alt=""/>
+      <img src={"./img/view06.png"} alt=""/>
     </div>
     <style>{`
     .view-list {
