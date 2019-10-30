@@ -10,32 +10,32 @@ const ProductAdvantage = () => (
     </div>
     <div className={"adv-list"}>
       <div className={"adv-item power"}>
-        <img src="/icon/power.svg" alt="power"/>
+        <img src="./icon/power.svg" alt="power"/>
         <span className={"title"}>电力资源</span>
         <div className={"introduce"}>自建矿场，稳定的电力资源</div>
       </div>
       <div className={"adv-item"}>
-        <img src="/icon/factory.svg" alt="power"/>
+        <img src="./icon/factory.svg" alt="power"/>
         <span className={"title"}>专业矿场</span>
         <div className={"introduce"}>严格按照设施要求施工，建设最安全的矿场</div>
       </div>
       <div className={"adv-item"}>
-        <img src="/icon/machine.svg" alt="power"/>
+        <img src="./icon/machine.svg" alt="power"/>
         <span className={"title"}>矿机设备</span>
         <div className={"introduce"}>与个大矿机厂商合作，拥有大量的现货和期货矿机</div>
       </div>
       <div className={"adv-item"}>
-        <img src="/icon/operations.svg" alt="power"/>
+        <img src="./icon/operations.svg" alt="power"/>
         <span className={"title"}>托管运维</span>
         <div className={"introduce"}>拥有专业的技术团队，更加专业和自动化的运维</div>
       </div>
       <div className={"adv-item"}>
-        <img src="/icon/service.svg" alt="power"/>
+        <img src="./icon/service.svg" alt="power"/>
         <span className={"title"}>一站式服务</span>
         <div className={"introduce"}>提供不同品类产品，为客户提供一站保姆式服务</div>
       </div>
       <div className={"adv-item"}>
-        <img src="/icon/power.svg" alt="power"/>
+        <img src="./icon/power.svg" alt="power"/>
         <span className={"title"}>战略合作</span>
         <div className={"introduce"}>与各大矿池深度合作，享受较低的矿池费用</div>
       </div>

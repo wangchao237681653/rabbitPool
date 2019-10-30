@@ -11,31 +11,31 @@ const Product = () => (
       <div className={"summary"}>矿机租赁和云算力都是租赁矿机形式，同时提供托管矿机等多种形式，让您更轻松挖取比特币（BTC）</div>
       <div className={"list"}>
         <div className={"pl-left item"}>
-          <img src={"/img1.svg"} alt="mine-rent"/>
+          <img src={"./img1.svg"} alt="mine-rent"/>
           <span className={"title"}>矿机租赁</span>
           <div className={"introduce"}>蚂蚁矿机，神马矿机等租赁</div>
           <div className={"actBtn mbtn"}>
-            <Link href='/unfind'>
+            <Link href='./unfind'>
               <div className={"btnContent"}>矿机租赁产品</div>
             </Link>
           </div>
         </div>
         <div className={"pl-middle item"}>
-          <img src={"/img2.svg"} alt="cloud-arg"/>
+          <img src={"./img2.svg"} alt="cloud-arg"/>
           <span className={"title"}>云算力</span>
           <div className={"introduce"}>挖比特币等云算力租赁</div>
           <div className={"actBtn cBtn"}>
-            <Link href='/unfind'>
+            <Link href='./unfind'>
               <div className={"btnContent"}>云算力产品</div>
             </Link>
           </div>
         </div>
         <div className={"pl-right item"}>
-          <img src={"/img3.svg"} alt="mine-rent"/>
+          <img src={"./img3.svg"} alt="mine-rent"/>
           <span className={"title"}>矿机托管</span>
           <div className={"introduce"}>比特币矿机海内外托管</div>
           <div className={"actBtn rBtn"}>
-            <Link href='/hosting'>
+            <Link href='./hosting'>
               <div className={"btnContent"}>矿机托管介绍</div>
             </Link>
           </div>

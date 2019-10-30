@@ -4,7 +4,7 @@ const showGuide = show => {
   if(show) {
     return (
       <div className={"guide"}>
-        <img  src={"/icon/guide.svg"} alt="guide"/>
+        <img  src={"./icon/guide.svg"} alt="guide"/>
       </div>
     )
   }
