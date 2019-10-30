@@ -1,7 +1,7 @@
 
 
 module.exports = {
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/{rabbitPool}' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? 'rabbitPool' : '',
   exportPathMap: async function (defaultPathMap) {
     return {
       '/': { page: '/' },
