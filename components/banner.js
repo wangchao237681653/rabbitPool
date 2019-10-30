@@ -11,7 +11,7 @@ const Banner = () => (
     <style jsx>{`
       .ban {
           height:480px;
-          background:url('/banner.jpg') no-repeat;
+          background:url('./banner.jpg') no-repeat;
           overflow: hidden;
           background-size:100%; 480px;
       }
