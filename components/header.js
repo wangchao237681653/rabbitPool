@@ -6,7 +6,7 @@ const Header = () => (
   <header>
     <ul>
       <li className={"logo"}>
-         <img src="/logo.svg" alt="logo" />
+         <img src="./logo.svg" alt="logo" />
       </li>
       <li>
         <Link href='/index'>
