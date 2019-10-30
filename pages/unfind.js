@@ -3,8 +3,8 @@ import Link from "next/link";
 export default function Unfind() {
   return (
     <div className={"unfind"}>
-      <Link href='/index'>
-        <img src={"/404.png"} alt=""/>
+      <Link href='./index'>
+        <img src={"./404.png"} alt=""/>
       </Link>
       <style>{`
          .unfind {
